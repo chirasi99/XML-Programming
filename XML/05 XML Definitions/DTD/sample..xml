@@ -1,0 +1,34 @@
+<?xml version= "1.0" encoding="UTF-8" standallone="no"?>
+<!DOCTYPE moives SYSTEM "sample.dtd"><!--External import-->
+
+<!--                                 Internal import
+<!DOCTYPE movies[
+<!ELEMENT movies(movie)*>
+<!ATTLLIST movie out CDATA "yes">
+<!ELEMENT movie(name, release, imdb,boxoffice,credits)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT name lang CDATA #FIXED "en">
+<!ELEMENT release(#PCDATA)>
+<!ELEMENT imdb(#PCDATA)>
+<!ELEMENT boxoffice(#PCDATA)>
+<!ELEMENT credits(#PCDATA)>
+<!ENTITY copyright "copyright ThripleBee">
+]
+-->
+
+<movies>
+    <movie out="yes">
+        <name lang="en">Jungle Cruise</name>
+        <release>July 30,2021 (USA)</release>
+        <imdb>7.0</imdb>
+        <boxoffice>600 M. USD</boxoffice>
+        <credits>&copyright;</credits>
+    </movie>
+    <movie out="yes">
+        <name lang="en">Spider Man No Way Home</name>
+        <release>December 17,2021 (USA)</release>
+        <imdb>8.8</imdb>
+        <boxoffice>1.5 B. USD</boxoffice>
+        <credits>&copyright;</credits>
+    </movie>
+</movies>

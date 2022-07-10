@@ -1,0 +1,16 @@
+----XML Syntax Validators----
+https://www.liquid-technologies.com/online-xml-validator
+
+----XML Formatters----
+https://jsonformatter.org/xml-formatter
+
+----XML Definition Validators----
+https://www.truugo.com/xml_validator/
+https://www.liquid-technologies.com/online-xsd-validator
+
+----XML XPath Testers----
+https://www.freeformatter.com/xpath-tester.html
+
+
+----Source Code----
+https://github.com/thriplebee/complete_xml_exercises

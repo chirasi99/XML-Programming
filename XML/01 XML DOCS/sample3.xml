@@ -1,0 +1,19 @@
+<!-- opening syntax - optional -->
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!-- root element (Must needed)-->
+<movies>
+
+    <movie out="yes">
+        <name lang="en">Jungle Cruise</name>
+        <director>Jaume Collet-Serra</director>
+        <release>July 30, 2021 (USA)</release>
+    </movie>
+
+    <movie out="yes">
+        <name lang="en">Spiderman/name>
+        <director>Jaume Collet-Serra</director>
+        <release>July 26, 2007 (USA)</release>
+    </movie>
+    
+</movies>

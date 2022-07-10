@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML DOM</title>
+</head>
+<!-- convert xml code into a XML DO object and access elements/data -->
+<body>
+    <p id="xml-data"></p>
+    <script>
+        const text =
+        `<movie>
+            <name>Jungle Cruise </name>
+            <director>Jaume Collet-Serra</director>
+            <release>July 30, 2021 (USA)</release>
+        </movie>`
+
+        // create a parser object
+        const parser=new DOMParser()
+
+        // convert xml code into a xml DOm Object
+        const xmlDoc= parser.parseFromString(text, "text/xml")
+
+        // access data/elements fro the DOM/XML code
+        console.log(xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue)
+        document.getElementById("xml-data").innerHTML = xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue
+    </script>
+</body>
+</html>

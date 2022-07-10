@@ -1,0 +1,26 @@
+<!ELEMENT movies(movie)*>
+<!--ELEMENT movies(movie)*  => many moives or there are no more 
+    ELEMENT movies(movie)+   => one or more movie elements 
+    ELEMENT movies(movie)?   => one or no more movie elements 
+    -->
+
+<!ATTLLIST movie out CDATA "yes">
+<!--!ATTLLIST movie out CDATA #FIXED "yes" ==> has fixed value as yes
+    !ATTLLIST movie out CDATA #REQUIRED       ==> required a value, we should not given the default value 
+    !ATTLLIST movie out CDATA #IMPLIED        ==> attribute is optional 
+ -->
+
+<!ELEMENT movie(name, release, imdb,boxoffice,credits)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT name lang CDATA #FIXED "en">
+<!ELEMENT release(#PCDATA)>
+<!ELEMENT imdb(#PCDATA)>
+<!ELEMENT boxoffice(#PCDATA)>
+<!ELEMENT credits(#PCDATA)>
+<!ENTITY copyright "copyright ThripleBee">
+
+
+
+
+
+

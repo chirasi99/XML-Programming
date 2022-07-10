@@ -1,0 +1,24 @@
+<!-- Have to use namespaces when using prefixes -->
+
+<?xml version= "1.0" encoding="UTF-8"?>
+<root>
+    <m:movie id="5" 
+            xmlns:m="http://www.imdb.com/hollywood/movies">
+        <m:name>Antlers</m:name>
+        <m:director>Scott Cooper</m:director>
+        <m:release> Januar 12, 2021</m:release>
+    </m:movie>
+
+    <c:movie id="5"
+            xmlns:c="http://www.imdb.com/hollywood/casts">
+        <c:actor>
+            <c:name>Jesse Plemons</c:name>
+            <c:age>44</c:age>
+        </c:actor>
+
+        <c:actor>
+            <c:name>Keri Russell</c:name>
+            <c:age>35</c:age>
+        </c:actor>  
+    </c:movie>
+</root>
